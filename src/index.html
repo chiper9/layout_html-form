@@ -24,8 +24,6 @@
               name="name"
               minlength="1"
               maxlength="20"
-              pattern="\w+"
-              autocapitalize="off"
               required
             >
           </lable>
@@ -39,7 +37,6 @@
               name="surname"
               minlength="1"
               maxlength="20"
-              pattern="\w+"
               autocomplete="off"
               required
             >
@@ -116,36 +113,36 @@
       <fieldset class="group-form">
         <legend>An interesting fact about you!</legend>
         <div class="form-field">
+          <label>
           Do you like cats?
-          <lable>
             <input
               type="radio"
-              name="answerAboutCat"
+              name="answerCat"
               value="yes"
               checked
             >
             Yes
-          </lable>
+          </label>
 
-          <lable>
+          <label>
             <input
               type="radio"
               name="answerCat"
               value="no"
             >
             No
-          </lable>
+          </label>
         </div>
 
         <div class="form-field">
-          <lable>
+          <label>
             What is your favorite color:
             <input
               name="favColor"
               type="color"
               required
             >
-          </lable>
+          </label>
         </div>
 
         <div class="form-field">
@@ -221,7 +218,8 @@
             name="subButton"
             class="button"
             type="submit"
-          >Submit
+          >
+          Submit
           </button>
         </label>
       </div>
